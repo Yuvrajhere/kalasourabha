@@ -15,24 +15,22 @@ function Event() {
 
   return (
     <div className="Event">
-      <header>
-        <nav>
-          <Link to="/" id="logo">
-            <img src={kalasourabhaLogo} alt="kalasourabha" />
-            <h2>Kalasourabha</h2>
-          </Link>
-        </nav>
-      </header>
       <main>
-        <h2>{eventData.name}</h2>
-        <p>{eventData.description}</p>
-        <div className="buttons">
-          <Link to="/">
-            <button>Go back</button>
-          </Link>
-          <Link to={eventData.formLink}>
-            <button>Register</button>
-          </Link>
+        <Link to="/" id="logo">
+          <img src={kalasourabhaLogo} alt="kalasourabha" />
+          <h2>Kalasourabha</h2>
+        </Link>
+        <div>
+          <h2>{eventData.name}</h2>
+          <p>{eventData.description}</p>
+          <div className="buttons">
+            <Link to="/">
+              <button>Go back</button>
+            </Link>
+            <Link to={eventData.formLink}>
+              <button>Register</button>
+            </Link>
+          </div>
         </div>
       </main>
     </div>
