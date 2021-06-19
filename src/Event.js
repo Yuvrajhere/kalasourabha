@@ -11,7 +11,7 @@ function Event() {
 
   useEffect(() => {
     setEventData(eventDetails.find((event) => event.tag === tag));
-  }, []);
+  }, [tag]);
 
   return (
     <div className="Event">
