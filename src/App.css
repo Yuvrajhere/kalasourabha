@@ -14,11 +14,13 @@ html {
 a {
   color: #000;
   text-decoration: none;
+  text-align: center;
 }
 
 .App #logo {
   display: flex;
   align-items: center;
+  display: none;
 }
 
 .App #logo img {
@@ -29,6 +31,7 @@ a {
 .App #logo h2 {
   font-family: "Lobster", cursive;
   font-size: 28px;
+  color: #fafaff;
 }
 
 .btn {
@@ -36,7 +39,6 @@ a {
   border: none;
 
   padding: 10px 20px;
-  margin: 20px;
   cursor: pointer;
 }
 
@@ -48,7 +50,7 @@ a {
 
   padding: 0 10%;
 
-  background: linear-gradient(rgba(255, 0, 0, 0.6), rgba(0, 26, 255, 0.6)),
+  background: linear-gradient(#ff000099, #001aff99),
     url("./assets/home-main-back.jpg") no-repeat;
   background-size: cover;
 }
@@ -67,42 +69,110 @@ a {
   font-family: "Lobster", cursive;
   font-size: 80px;
   text-align: center;
+  color: #fafaff;
 }
 
 .Home .main-content h1 span {
-  color: #fff;
+  font-weight: 300;
   font-family: "Lobster", cursive;
 }
 
 .Home .main-content p {
-  font-size: 40px;
+  font-size: 36px;
   text-align: center;
   font-family: "Dancing Script", cursive;
   font-weight: 700;
   width: 60%;
+  color: #fafaff;
+}
+
+.Home .main-content .buttons {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.Home .main-content .buttons a:nth-child(1) button {
+  font-family: "Lobster", cursive;
+  margin-right: 20px;
+
+  background-color: #ff000099;
+  border: 2px solid #fafaff;
+  border-radius: 25px;
+  padding: 10px 40px;
+
+  color: #fafaff;
+
+  font-size: 24px;
+}
+
+.Home .main-content .buttons a:nth-child(1) button:hover {
+  background-color: #fafaff;
+  border: 2px solid #ff000099;
+  color: #ff000099;
+}
+
+.Home .main-content .buttons a:nth-child(2) button {
+  font-family: "Lobster", cursive;
+
+  background-color: #001aff99;
+  border: 2px solid #fafaff;
+  border-radius: 25px;
+  padding: 10px 40px;
+
+  color: #fafaff;
+
+  font-size: 24px;
+}
+
+.Home .main-content .buttons a:nth-child(2) button:hover {
+  background-color: #fafaff;
+  border: 2px solid #001aff99;
+  color: #001aff99;
 }
 
 .Home #events {
   padding: 10vh 10vw;
-
-  background: #cc2b5e; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #753a88,
-    #cc2b5e
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #753a88,
-    #cc2b5e
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(45deg, #d14081, #46b1c9);
 }
 
 .Home #events h1 {
   font-family: "Lobster", cursive;
   text-align: center;
   font-size: 40px;
-  margin-bottom: 80px;
+  color: #fafaff;
+}
+
+.Home #events .category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 40px 0;
+}
+
+.Home #events .category label {
+  font-family: "Dancing Script", cursive;
+  color: #fafaff;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.Home #events .category select {
+  margin-right: 20px;
+
+  background-color: #ff000099;
+  border: 2px solid #fafaff;
+  border-radius: 25px;
+  padding: 5px 20px;
+
+  color: #fafaff;
+
+  font-size: 16px;
+}
+
+.Home #events .category select:focus {
+  outline: none;
 }
 
 .Home #events .event-list {
@@ -115,11 +185,22 @@ a {
   min-width: 260px;
   max-width: 23%;
 
-  background-color: #000;
+  background-color: #46b1c9;
   color: #fff;
   border-radius: 10px;
 
   margin-bottom: 40px;
+
+  background: rgba(255, 255, 255, 0.25);
+  /* box-shadow: 0 8px 12px 0 rgba(151, 250, 255, 0.37); */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.Home #events .event-card > div {
+  padding: 30px 20px;
 }
 
 .Home #events .event-card img {
@@ -129,18 +210,73 @@ a {
   border-top-right-radius: 10px;
 }
 
+.Home #events .event-card > div h2 {
+  font-family: "Lobster", cursive;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.Home #events .event-card .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Home #events .event-card .buttons a:nth-child(1) button {
+  font-family: "Lobster", cursive;
+
+  background-color: #ff000099;
+  border: 2px solid #fafaff;
+  border-radius: 25px;
+  padding: 5px 20px;
+
+  color: #fafaff;
+
+  font-size: 16px;
+}
+
+.Home #events .event-card .buttons a:nth-child(1) button:hover {
+  background-color: #fafaff;
+  border: 2px solid #ff000099;
+  color: #ff000099;
+}
+
+.Home #events .event-card .buttons a:nth-child(2) button {
+  font-family: "Lobster", cursive;
+
+  background-color: #001aff99;
+  border: 2px solid #fafaff;
+  border-radius: 25px;
+  padding: 5px 20px;
+
+  color: #fafaff;
+
+  font-size: 16px;
+}
+
+.Home #events .event-card .buttons a:nth-child(2) button:hover {
+  background-color: #fafaff;
+  border: 2px solid #001aff99;
+  color: #001aff99;
+}
+
 .Home footer {
-  background-color: rgb(15, 12, 12);
+  background-color: #0f0c0c;
   padding: 10vh 10vw;
-  color: #fff;
+  color: #D14081;
 }
 
-.Home footer img {
-  height: 50px;
+.Home footer > h2 {
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
-.Home a {
-  color: #fff;
+.Home footer .contacts {
+  margin-bottom: 20px;
+}
+
+.Home footer .contacts h2 {
+  margin-bottom: 5px;
 }
 
 .Home footer .contacts-list {
@@ -149,9 +285,55 @@ a {
   flex-wrap: wrap;
 }
 
+.Home footer .contact {
+  margin-bottom: 5px;
+}
+
+.Home footer .contact p {
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+
 .Home .contact a {
   font-weight: 700;
   font-size: 24px;
+}
+
+.Home footer .contacts a {
+  color: #fff;
+}
+
+.Home footer .partner {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Home footer .rrce-media img {
+  margin: 10px 0;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.Home footer .socials img {
+  height: 50px;
+}
+
+.Home footer .socials-list {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Home footer .socials-list :nth-child(1) {
+  margin-right: 10px;
+}
+
+.Home footer .college img {
+  width: 100%;
+  max-width: 300px;
+  margin: 20px 0;
 }
 
 @media screen and (max-width: 800px) {
@@ -168,5 +350,19 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .Home .main-content .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Home .main-content .buttons a:nth-child(1) button {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .Home footer .socials-list {
+    justify-content: flex-start;
   }
 }
