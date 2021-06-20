@@ -146,14 +146,13 @@ a {
 .Home footer .contacts-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .Home .contact a {
   font-weight: 700;
   font-size: 24px;
 }
-
-
 
 @media screen and (max-width: 800px) {
   .Home .main-content h1 {
