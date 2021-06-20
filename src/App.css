@@ -129,6 +129,32 @@ a {
   border-top-right-radius: 10px;
 }
 
+.Home footer {
+  background-color: rgb(15, 12, 12);
+  padding: 10vh 10vw;
+  color: #fff;
+}
+
+.Home footer img {
+  height: 50px;
+}
+
+.Home a {
+  color: #fff;
+}
+
+.Home footer .contacts-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Home .contact a {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+
+
 @media screen and (max-width: 800px) {
   .Home .main-content h1 {
     font-size: 50px;
