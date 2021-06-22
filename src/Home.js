@@ -133,7 +133,7 @@ function Home() {
             <img src={rrceLogo} alt="rrce" />
           </a>
           <p>
-            Ramohalli Cross, Kumbalgodu, Mysore Road, Bengaluru - 560 074,
+            14, Ramohalli Cross, Kumbalgodu, Mysore Road, Bengaluru - 560 074,
             Karnataka, India.
           </p>
         </div>
