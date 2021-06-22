@@ -45,7 +45,7 @@ function Home() {
                 setCategory(e.target.value);
               }}
             >
-              <option value="off-stage">Off Stage</option>
+              <option value="off-stage">Ongoing</option>
               <option value="live">Live</option>
             </select>
           </div>
@@ -69,7 +69,7 @@ function Home() {
         </div>
         <div className="events-div">
           <h2>
-            {category !== "off-stage" ? "Off Stage Events" : "Live Events"}
+            {category !== "off-stage" ? "Ongoing Events" : "Live Events"}
           </h2>
           <div className="event-list">
             {eventDetails.map((event) => {
