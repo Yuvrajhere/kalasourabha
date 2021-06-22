@@ -20,7 +20,6 @@ a {
 .App #logo {
   display: flex;
   align-items: center;
-  display: none;
 }
 
 .App #logo img {
@@ -31,7 +30,6 @@ a {
 .App #logo h2 {
   font-family: "Lobster", cursive;
   font-size: 28px;
-  color: #fafaff;
 }
 
 .btn {
@@ -69,12 +67,12 @@ a {
   font-family: "Lobster", cursive;
   font-size: 80px;
   text-align: center;
-  color: #fafaff;
 }
 
 .Home .main-content h1 span {
   font-weight: 300;
   font-family: "Lobster", cursive;
+  color: #fafaff;
 }
 
 .Home .main-content p {
@@ -86,84 +84,65 @@ a {
   color: #fafaff;
 }
 
-.Home .main-content .buttons {
-  display: flex;
-  margin-top: 40px;
-  align-items: center;
-}
-
-.Home .main-content .buttons a:nth-child(1) button {
+.Home .main-content  button {
   font-family: "Lobster", cursive;
   margin-right: 20px;
+  margin-top: 40px;
 
-  background-color: #ff000099;
-  border: 2px solid #fafaff;
+  background-color: #0f0c0c;
+
+  border: 2px solid #fff;
   border-radius: 25px;
   padding: 10px 40px;
 
-  color: #fafaff;
+  color: #fff;
 
   font-size: 24px;
 }
 
-.Home .main-content .buttons a:nth-child(1) button:hover {
-  background-color: #fafaff;
-  border: 2px solid #ff000099;
-  color: #ff000099;
-}
-
-.Home .main-content .buttons a:nth-child(2) button {
-  font-family: "Lobster", cursive;
-
-  background-color: #001aff99;
-  border: 2px solid #fafaff;
-  border-radius: 25px;
-  padding: 10px 40px;
-
-  color: #fafaff;
-
-  font-size: 24px;
-}
-
-.Home .main-content .buttons a:nth-child(2) button:hover {
-  background-color: #fafaff;
-  border: 2px solid #001aff99;
-  color: #001aff99;
+.Home .main-content  button:hover {
+  opacity: 0.8;
 }
 
 .Home #events {
   padding: 10vh 10vw;
-  background: linear-gradient(45deg, #d14081, #46b1c9);
+  background: #052DA6;
 }
 
-.Home #events h1 {
-  font-family: "Lobster", cursive;
-  text-align: center;
-  font-size: 40px;
-  color: #fafaff;
+.Home #events .events-header {
+  background-color: #f6eaf4;
+  padding: 20px 40px;
+  border-radius: 8px;
+
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  margin-bottom: 20px;
+  color: #422b40;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Home #events .events-header h1 {
+  color: #23001E;
 }
 
 .Home #events .category {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin: 40px 0;
 }
 
 .Home #events .category label {
-  font-family: "Dancing Script", cursive;
-  color: #fafaff;
-  font-size: 24px;
   margin-right: 10px;
 }
 
 .Home #events .category select {
-  margin-right: 20px;
 
-  background-color: #ff000099;
-  border: 2px solid #fafaff;
-  border-radius: 25px;
+  background-color: #23001E;
+  border: none;
+  border-radius: 8px;
   padding: 5px 20px;
 
   color: #fafaff;
@@ -175,6 +154,21 @@ a {
   outline: none;
 }
 
+.Home #events .events-div {
+  padding: 20px 40px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.Home #events .events-div h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
 .Home #events .event-list {
   display: flex;
   justify-content: space-between;
@@ -182,91 +176,45 @@ a {
 }
 
 .Home #events .event-card {
-  min-width: 260px;
+  min-width: 250px;
   max-width: 23%;
 
-  background-color: #46b1c9;
-  color: #fff;
+  color: #23001E;
   border-radius: 10px;
 
   margin-bottom: 40px;
+  background: #fff;
 
-  background: rgba(255, 255, 255, 0.25);
-  /* box-shadow: 0 8px 12px 0 rgba(151, 250, 255, 0.37); */
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.Home #events .event-card > div {
-  padding: 30px 20px;
-}
-
-.Home #events .event-card img {
-  width: 100%;
-  height: 200px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.Home #events .event-card > div h2 {
-  font-family: "Lobster", cursive;
+.Home #events .event-card h2 {
   margin-bottom: 10px;
   text-align: center;
+  color: #000;
 }
 
-.Home #events .event-card .buttons {
-  display: flex;
-  justify-content: space-between;
+.Home #events .event-card button {
+  margin: 0 auto;
+  background-color: #23001E;
+  border-radius: 8px;
+  color: #fff;
 }
 
-.Home #events .event-card .buttons a:nth-child(1) button {
-  font-family: "Lobster", cursive;
-
-  background-color: #ff000099;
-  border: 2px solid #fafaff;
-  border-radius: 25px;
-  padding: 5px 20px;
-
-  color: #fafaff;
-
-  font-size: 16px;
-}
-
-.Home #events .event-card .buttons a:nth-child(1) button:hover {
-  background-color: #fafaff;
-  border: 2px solid #ff000099;
-  color: #ff000099;
-}
-
-.Home #events .event-card .buttons a:nth-child(2) button {
-  font-family: "Lobster", cursive;
-
-  background-color: #001aff99;
-  border: 2px solid #fafaff;
-  border-radius: 25px;
-  padding: 5px 20px;
-
-  color: #fafaff;
-
-  font-size: 16px;
-}
-
-.Home #events .event-card .buttons a:nth-child(2) button:hover {
-  background-color: #fafaff;
-  border: 2px solid #001aff99;
-  color: #001aff99;
+.Home #events .event-card button:hover {
+  opacity: 0.9;
 }
 
 .Home footer {
   background-color: #0f0c0c;
   padding: 10vh 10vw;
-  color: #D14081;
+  color: #f6eaf4;
 }
 
 .Home footer > h2 {
-  font-family: "Lobster", cursive;
   font-size: 40px;
   margin-bottom: 20px;
 }
@@ -352,17 +300,17 @@ a {
     justify-content: center;
   }
 
-  .Home .main-content .buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .Home .main-content .buttons a:nth-child(1) button {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
   .Home footer .socials-list {
     justify-content: flex-start;
   }
+  
+  .Home #events {
+    padding: 5vh 5vw;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .Home #events .event-card {
+    min-width: 200px;
+}
 }
