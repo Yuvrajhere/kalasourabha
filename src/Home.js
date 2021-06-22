@@ -58,9 +58,9 @@ function Home() {
                 event.category !== category && (
                   <div key={event.tag} className="event-card">
                     <h2>{event.name}</h2>
-                    <Link to={event.formLink}>
+                    <a href={event.formLink} target="_blank">
                       <button className="btn">Register Now</button>
-                    </Link>
+                    </a>
                   </div>
                 )
               );
