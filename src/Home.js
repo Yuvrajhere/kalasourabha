@@ -59,7 +59,7 @@ function Home() {
                   <div key={event.tag} className="event-card">
                     <h2>{event.name}</h2>
                     <Link to={event.formLink}>
-                      <button className="btn">Register</button>
+                      <button className="btn">Register Now</button>
                     </Link>
                   </div>
                 )
