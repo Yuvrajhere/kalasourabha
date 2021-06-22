@@ -55,7 +55,7 @@ function Home() {
           <div className="event-list">
             {eventDetails.map((event) => {
               return (
-                event.category !== category && (
+                event.category === category && (
                   <div key={event.tag} className="event-card">
                     <h2>{event.name}</h2>
                     <a href={event.formLink} target="_blank" rel="noreferrer">
@@ -74,7 +74,7 @@ function Home() {
           <div className="event-list">
             {eventDetails.map((event) => {
               return (
-                event.category === category && (
+                event.category !== category && (
                   <div key={event.tag} className="event-card">
                     <h2>{event.name}</h2>
                     <Link to={event.formLink}>
