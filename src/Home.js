@@ -152,8 +152,11 @@ function Home() {
               </div>
             </div>
             <div className="developer">
-              <h2>Website Developer</h2>
-              <p>Yuvraj Singh Chouhan</p>
+              <h2>Website team</h2>
+              <div className="list">
+                <p>Yuvraj Singh Chouhan</p>
+                <p>Yuvraj Singh Chouhan</p>
+              </div>
             </div>
           </div>
         </div>
