@@ -6,6 +6,8 @@ import rrceLogo from "./assets/RRCE-logo.png";
 import rrceMediaLogo from "./assets/rrce-media-logo.jpg";
 import fbLogo from "./assets/fb-icon.png";
 import instagramLogo from "./assets/instagram-icon.png";
+import whatsappLogo from "./assets/whatsapp-icon.png";
+
 import { useState } from "react";
 
 function Home() {
@@ -68,9 +70,7 @@ function Home() {
           </div>
         </div>
         <div className="events-div">
-          <h2>
-            {category !== "off-stage" ? "Ongoing Events" : "Live Events"}
-          </h2>
+          <h2>{category !== "off-stage" ? "Ongoing Events" : "Live Events"}</h2>
           <div className="event-list">
             {eventDetails.map((event) => {
               return (
@@ -90,20 +90,70 @@ function Home() {
 
       <footer>
         <h2>Contact Us</h2>
-        <div className="contacts">
-          <h2>Main Coordinators</h2>
-          <div className="contacts-list">
-            <div className="contact">
-              <p>Mohammed Musab Khan</p>
-              <a href="tel:5554280940">5554280940</a>
+        <div className="team">
+          <div className="team-1">
+            <div className="cultural-head">
+              <h2>Cultural Head</h2>
+              <h1>Prof. Thanuj Kumar M</h1>
             </div>
-            <div className="contact">
-              <p>Keerthi Chandru</p>
-              <a href="tel:5554280940">5554280940</a>
+            <div className="contacts">
+              <h2>Main Coordinators</h2>
+              <div className="contacts-list">
+                <div className="contact">
+                  <p>Mohammed Musab Khan </p>
+                  <a href="tel:9900505971">9900505971</a>
+                  <a href="https://wa.me/919900505971" title="whatsapp">
+                    <img src={whatsappLogo} alt="whatsapp" />
+                  </a>
+                </div>
+                <div className="contact">
+                  <p>Keerthi Chandru</p>
+                  <a href="tel:9019156953">9019156953</a>
+                </div>
+              </div>
             </div>
-            <div className="contact">
-              <p>Sample Name</p>
-              <a href="tel:5554280940">5554280940</a>
+          </div>
+          <div className="team-2">
+            <div className="student-cords">
+              <h2>Student Coordinators</h2>
+              <div className="list">
+                <p>Mohammed Musab Khan</p>
+                <p>Naveen A</p>
+                <p>Keerthi chandru</p>
+                <p>Lalana M</p>
+                <p>Monika Singh</p>
+                <p>Ankith Kumar</p>
+                <p>Akshata</p>
+                <p>Aparna</p>
+                <p>Pavithra Kumar</p>
+              </div>
+            </div>
+            <div className="faculty-coords">
+              <h2>Faculty Coordinators</h2>
+              <div className="list">
+                <p>Prof. Ashwini R Malipatil</p>
+                <p>Prof. Prutha G</p>
+                <p>Prof. Deepa K R</p>
+                <p>Prof. Deepika J</p>
+                <p>Prof. Nandini G</p>
+                <p>Prof. Ravikumar T</p>
+              </div>
+            </div>
+          </div>
+          <div className="team-3">
+            <div className="resources">
+              <h2>Design & Resources team</h2>
+              <div className="list">
+                <p>Tilak P</p>
+                <p>Yuvraj Singh Chouhan</p>
+                <p>Naveen A</p>
+                <p>Prathyusha H Kumar</p>
+                <p>Jaiakhil K</p>
+              </div>
+            </div>
+            <div className="developer">
+              <h2>Website Developer</h2>
+              <p>Yuvraj Singh Chouhan</p>
             </div>
           </div>
         </div>

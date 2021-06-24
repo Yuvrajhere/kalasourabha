@@ -84,7 +84,7 @@ a {
   color: #fafaff;
 }
 
-.Home .main-content  button {
+.Home .main-content button {
   font-family: "Lobster", cursive;
   margin-right: 20px;
   margin-top: 40px;
@@ -100,13 +100,13 @@ a {
   font-size: 24px;
 }
 
-.Home .main-content  button:hover {
+.Home .main-content button:hover {
   opacity: 0.8;
 }
 
 .Home #events {
   padding: 10vh 10vw;
-  background: #052DA6;
+  background: #052da6;
 }
 
 .Home #events .events-header {
@@ -114,7 +114,7 @@ a {
   padding: 20px 40px;
   border-radius: 8px;
 
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
   margin-bottom: 20px;
   color: #422b40;
@@ -125,7 +125,7 @@ a {
 }
 
 .Home #events .events-header h1 {
-  color: #23001E;
+  color: #23001e;
 }
 
 .Home #events .category {
@@ -139,8 +139,7 @@ a {
 }
 
 .Home #events .category select {
-
-  background-color: #23001E;
+  background-color: #23001e;
   border: none;
   border-radius: 8px;
   padding: 5px 20px;
@@ -179,7 +178,7 @@ a {
   min-width: 250px;
   max-width: 23%;
 
-  color: #23001E;
+  color: #23001e;
   border-radius: 10px;
 
   margin-bottom: 40px;
@@ -199,7 +198,7 @@ a {
 
 .Home #events .event-card button {
   margin: 0 auto;
-  background-color: #23001E;
+  background-color: #23001e;
   border-radius: 8px;
   color: #fff;
 }
@@ -284,6 +283,51 @@ a {
   margin: 20px 0;
 }
 
+.Home footer .team .team-1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Home footer .team-1 .cultural-head h1 {
+  font-size: 28px;
+}
+
+.Home footer .team-1 .cultural-head {
+  margin-bottom: 10px;
+}
+
+.Home .team-1 .contacts {
+  width: 50%;
+}
+
+.Home .team-1 .contacts-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Home .contact a:first-of-type {
+  margin-right: 10px;
+}
+
+.Home .contact a:last-of-type img {
+  height: 20px;
+  width: 20px;
+}
+
+.Home .team-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Home .team-3 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 @media screen and (max-width: 800px) {
   .Home .main-content h1 {
     font-size: 50px;
@@ -303,14 +347,26 @@ a {
   .Home footer .socials-list {
     justify-content: flex-start;
   }
-  
+
   .Home #events {
     padding: 5vh 5vw;
+  }
+
+  .Home .team-1 .contacts {
+    width: 100%;
+  }
+
+  .Home .team-2 .student-cords {
+    margin-bottom: 20px;
+  }
+
+  .Home .team-3 .resources {
+    margin-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 340px) {
   .Home #events .event-card {
     min-width: 200px;
-}
+  }
 }
