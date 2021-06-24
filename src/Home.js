@@ -155,7 +155,7 @@ function Home() {
               <h2>Website team</h2>
               <div className="list">
                 <p>Yuvraj Singh Chouhan</p>
-                <p>Yuvraj Singh Chouhan</p>
+                <p>Mohammed Musab Khan</p>
               </div>
             </div>
           </div>
