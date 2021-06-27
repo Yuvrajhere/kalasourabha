@@ -132,6 +132,18 @@ const eventDetails = [
     formLink: "http://bit.ly/gotoPoetry2021",
     category: "off-stage",
   },
+  {
+    tag: "cartooning_and_animation",
+    name: "Cartooning and Animation",
+    formLink: "https://forms.gle/6awbtEBKN7oWaVtW6",
+    category: "off-stage",
+  },
+  {
+    tag: "crazy_ideas",
+    name: "Crazy Ideas",
+    formLink: "https://forms.gle/xNasNMuFY9BUENV36",
+    category: "off-stage",
+  },
 ];
 
 export default eventDetails;
