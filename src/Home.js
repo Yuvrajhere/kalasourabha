@@ -131,6 +131,7 @@ function Home() {
             <div className="faculty-coords">
               <h2>Faculty Coordinators</h2>
               <div className="list">
+                <p>Prof. M C MALARVIZHI</p>
                 <p>Prof. Ashwini R Malipatil</p>
                 <p>Prof. Prutha G</p>
                 <p>Prof. Deepa K R</p>
